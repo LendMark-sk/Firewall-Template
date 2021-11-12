@@ -20,7 +20,7 @@
 IPTABLES="sudo iptables" # The location of iptables
 MINECRAFT_PORT="25565" # The port of your minecraft server
 
-burstconns=40 # Limit new connections per second. This is highly useful when
+burstconns=15 # Limit new connections per second. This is highly useful when
               # somebody starts an attack because it basically makes his attack
               # literally have no visual effect.
               # 
