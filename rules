@@ -27,7 +27,7 @@ burstconns=2 # Limit new connections per second. This is highly useful when
               # Don't rely solely on this as this doesn't really fix the issue,
               # just get rid of suspicious IP's.
               
-burstconnstimestamp=2 # Limit new connections per second if the connection has timestamp. 
+burstconnstimestamp=1 # Limit new connections per second if the connection has timestamp. 
                       # This is highly useful when somebody starts an attack because it 
                       # drop the handshake of old linux users and very old windows 
                       # (80% the connection is not legit)
