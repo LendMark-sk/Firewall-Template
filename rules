@@ -65,11 +65,11 @@ echo "Firewall - Enabling logic of 3w handshake."
 #If you use BungeeCord/Velocity, follow this to block BungeeCord exploit.
 #https://www.spigotmc.org/wiki/firewall-guide/
 
-# Whitelist mysql port.
-$IPTABLES -A INPUT -p tcp --dport 3306 -s 127.0.0.1 -j ACCEPT #Enable 3306 on 127.0.0.1.
-$IPTABLES -A INPUT -p tcp --dport 3306 -s 1.1.1.1 -j ACCEPT #Enable 3306 on 1.1.1.1.
-$IPTABLES -A INPUT -p tcp --dport 3306 -j DROP #Block all IP to 3306 if its not 127.0.0.1 or 1.1.1.1.
-echo "Firewall - WL MySQL port."
+# Whitelist redis port.
+$IPTABLES -A INPUT -p tcp --dport 6379 -s 127.0.0.1 -j ACCEPT
+$IPTABLES -A INPUT -p tcp --dport 6379 -s 1.1.1.1 -j ACCEPT 
+$IPTABLES -A INPUT -p tcp --dport 6379 -s 83.167.243.176 -j ACCEPT
+echo "Firewall - WL Redis port."
 #------------------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------------
